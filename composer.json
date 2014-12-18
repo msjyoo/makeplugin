@@ -1,0 +1,21 @@
+{
+    "name": "sekjun9878/pluginlib",
+    "version": "v1.0.0",
+    "description": "A pure PHP implementation of PocketMine DevTools",
+    "keywords": ["pocketmine", "plugin", "devtools"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Yoo",
+            "email": "michael@yoo.id.au"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": { "CakePowered\\PluginLib\\": "src/" }
+    }
+}
+
