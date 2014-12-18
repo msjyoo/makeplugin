@@ -21,8 +21,6 @@ class MakePlugin
 	 */
 	public static function makePlugin($sourcePath, $pharOutputLocation, $options)
 	{
-		//TODO: Check Plugin
-
 		/* Removes Leading '/' */
 		$sourcePath = rtrim(str_replace("\\", "/", realpath($sourcePath)), "/") . "/";
 
@@ -61,9 +59,6 @@ class MakePlugin
 
 		$phar->startBuffering();
 
-		/*$file = NULL;
-		$path = NULL;*///Reset variables for foreach?
-
 		foreach(new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($sourcePath)) as $file)
 		{
 			$path = ltrim(str_replace(["\\", $sourcePath], ["/", ""], $file), "/");
@@ -72,7 +67,6 @@ class MakePlugin
 				continue;
 			}
 			$phar->addFile($file, $path);
-			echo("[DevTools] Adding $path\n");
 		}
 
 		if($options * self::MAKEPLUGIN_COMPRESS)
@@ -81,8 +75,6 @@ class MakePlugin
 		}
 
 		$phar->stopBuffering();
-
-		echo("Phar plugin " . $description->getName() . " v" . $description->getVersion() . " has been created on " . $pharPath . "\n");
 
 		return true;
 	}
