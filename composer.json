@@ -3,12 +3,15 @@
     "version": "v1.0.0",
     "description": "A pure PHP implementation of PocketMine DevTools for packing plugins.",
     "keywords": ["pocketmine", "plugin", "devtools"],
+    "homepage": "https://github.com/sekjun9878/makeplugin",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Michael Yoo",
-            "email": "michael@yoo.id.au"
+            "email": "michael@yoo.id.au",
+            "homepage": "https://www.michael.yoo.id.au/",
+            "role": "Developer"
         }
     ],
     "require": {
