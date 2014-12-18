@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Michael
- * Date: 18/12/2014
- * Time: 12:15 PM
- */
 
-namespace CakePowered\PluginLib;
+namespace sekjun9878\MakePlugin;
 
 class PluginDescription extends \pocketmine\plugin\PluginDescription
 {

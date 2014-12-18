@@ -1,8 +1,8 @@
 <?php
 
-namespace CakePowered\PluginLib;
+namespace sekjun9878\MakePlugin;
 
-class PluginLib
+class MakePlugin
 {
 	const VERSION = "1.0.0";
 

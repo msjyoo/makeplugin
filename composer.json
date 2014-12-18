@@ -1,7 +1,7 @@
 {
-    "name": "sekjun9878/pluginlib",
+    "name": "sekjun9878/makeplugin",
     "version": "v1.0.0",
-    "description": "A pure PHP implementation of PocketMine DevTools",
+    "description": "A pure PHP implementation of PocketMine DevTools for packing plugins.",
     "keywords": ["pocketmine", "plugin", "devtools"],
     "type": "library",
     "license": "MIT",
@@ -15,7 +15,7 @@
         "php": ">=5.4.0"
     },
     "autoload": {
-        "psr-4": { "CakePowered\\PluginLib\\": "src/" }
+        "psr-4": { "sekjun9878\\MakePlugin\\": "src/" }
     }
 }
 
